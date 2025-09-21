@@ -1,0 +1,1 @@
+this is the form that powers the ai automation i made, submitting its payload to a rudderstack destination being my n8n webhook. n8n then picks it from there and saves the data as a new entry in an already-prepared google sheet
