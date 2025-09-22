@@ -50,11 +50,8 @@ app.get("/users", (req, res) => {
   const windowEnd = getTodayAtLocalHour(8); // 8 AM today
 
   const users = [
-    { id: 1, name: "Ada Lovelace" },
-    { id: 2, name: "Grace Hopper" },
-    { id: 3, name: "Alan Turing" },
-    { id: 4, name: "Katherine Johnson" },
-    { id: 5, name: "Donald Knuth" },
+    { id: 1, name: "Tayo Adedigba", email: 'teeydigba@gmail.com' },
+    { id: 2, name: "Peter Adedigba", email:'peteradetayo21@gmail.com' },
   ].map((user) => ({
     ...user,
     lastLoginTime: formatAsIsoLocal(
