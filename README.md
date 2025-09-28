@@ -1,1 +1,2 @@
 this is the form that powers an ai automation i made, submitting its payload to a rudderstack destination being my n8n webhook. n8n then picks it from there and saves the data as a new entry in an already-prepared google sheet.
+more than just the form, i added a bunch of simulated responses to certain api endpoints in order to test the flow of an making an https request and based on the response, initiate certain automated processes.
