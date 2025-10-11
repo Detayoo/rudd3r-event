@@ -38,16 +38,14 @@ function formatAsIsoLocal(date) {
   return date.toISOString();
 }
 
-// GET /last-login-8am → returns today's 8:00 AM (local) as ISO string
 app.get("/last-login-8am", (req, res) => {
   const eightAmToday = getTodayAtLocalHour(8);
   res.json({ lastLoginTime: formatAsIsoLocal(eightAmToday) });
 });
 
-// GET /users → returns users with lastLoginTime between 9 PM yesterday and 8 AM today
 app.get("/users", (req, res) => {
-  const windowStart = getYesterdayAtLocalHour(21); // 9 PM yesterday
-  const windowEnd = getTodayAtLocalHour(8); // 8 AM today
+  const windowStart = getYesterdayAtLocalHour(21);
+  const windowEnd = getTodayAtLocalHour(8);
 
   const users = [
     { id: 1, name: "Tayo Adedigba", email: 'teeydigba@gmail.com' },
