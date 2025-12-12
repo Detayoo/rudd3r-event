@@ -11,7 +11,7 @@ the whole flow is pretty straightforward:
 3. **n8n automation** - n8n picks up the webhook payload and processes it
 4. **google sheets** - the data gets saved as a new row in a pre-configured google sheet
 
-## the testing part
+## test
 
 beyond just the basic form-to-sheets flow, i added some simulated api responses to test the automation logic. basically:
 
@@ -19,12 +19,3 @@ beyond just the basic form-to-sheets flow, i added some simulated api responses 
 - based on what comes back from these "api calls", the automation triggers different processes
 - this lets me test the entire flow without hitting real apis or dealing with actual crypto transactions
 
-## why this matters
-
-this setup lets you:
-- quickly prototype automation flows without backend infrastructure
-- test different scenarios by simulating various api responses
-- keep everything organized in a spreadsheet for easy review
-- scale up when ready by swapping simulated endpoints with real ones
-
-it's a low-friction way to build and test whatsapp bot interactions before going live with actual crypto operations.
